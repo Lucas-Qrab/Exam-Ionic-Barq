@@ -7,13 +7,19 @@ import { IonicModule } from '@ionic/angular';
 import { AddPageRoutingModule } from './add-routing.module';
 
 import { AddPage } from './add.page';
+import { SharedModule } from 'src/app/modules/shared-module/shared-module.module';
+import { NativeGeocoder } from '@awesome-cordova-plugins/native-geocoder/ngx';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AddPageRoutingModule
+    AddPageRoutingModule,
+    SharedModule,
+  ],
+  providers: [
+        NativeGeocoder
   ],
   declarations: [AddPage]
 })

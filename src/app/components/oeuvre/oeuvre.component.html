@@ -1,3 +1,25 @@
-<p>
-  oeuvre works!
-</p>
+<ion-card>
+  <ion-item>
+    <img [src]="photo">
+  </ion-item>
+  <ion-label>
+    <ion-title slot="">
+      <h3>{{ name }}</h3>
+    </ion-title>
+  </ion-label>
+  <ion-item>
+    <p>Auteur : {{ auteur }}</p>
+  </ion-item>
+  <ion-item>
+    <p>Date de création : {{ date }}</p>
+  </ion-item>
+  <ion-item>
+    <p>
+      Coordonnées : 
+      <br>
+      lat : {{ latitude }} 
+      <br> 
+      long : {{ longitude }}
+    </p>
+  </ion-item>
+</ion-card>

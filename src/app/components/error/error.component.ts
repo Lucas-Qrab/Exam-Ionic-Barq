@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-error',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./error.component.scss'],
 })
 export class ErrorComponent implements OnInit {
+  @Input() alerte = 'Une erreur est survenue, svp réessayer ultérieurement';
 
   constructor() { }
 

@@ -1,41 +1,57 @@
 {
-    "oeuvres": [
-        {
-            "id": 1,
-            "name": "No ball games",
-            "photo": "../../assets/photos/NoBall.jpg",
-            "Auteur": "Banksy",
-            "Date":"2013",
-            "latitude":"",
-            "longitude":""
-        },
-        {
-            "id": 2,
-            "name": "Well Hung Lover",
-            "photo": "../../assets/photos/196px-Well_Hung_Lover.jpg",
-            "Auteur": "Banksy",
-            "Date":"2006",
-            "latitude":"",
-            "longitude":"" 
-        },
-        {
-            "id": 3,
-            "name": "Crayon for Closur",
-            "photo": "../../assets/photos/CrayonClosur.jpg",
-            "Auteur": "Banksy",
-            "Date":"2015",
-            "latitude":"",
-            "longitude":""
-        },
-        {
-            "id": 4,
-            "name": "M-chat",
-            "photo": "../../assets/photos/M-chat.jpg",
-            "Auteur": "Thomas Vuille",
-            "Date":"2003",
-            "latitude":"",
-            "longitude":""
-        }
-        
-    ]
+  "oeuvres": [
+    {
+      "id": 1,
+      "name": "No ball games",
+      "photo": "../../assets/photos/NoBall.jpg",
+      "auteur": "Banksy",
+      "date": "2013",
+      "latitude": "",
+      "longitude": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "favori": true
+    },
+    {
+      "id": 2,
+      "name": "Well Hung Lover",
+      "photo": "../../assets/photos/196px-Well_Hung_Lover.jpg",
+      "auteur": "Banksy",
+      "date": "2006",
+      "latitude": "",
+      "longitude": "",
+      "favori": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 3,
+      "name": "Crayon for Closur",
+      "photo": "../../assets/photos/CrayonClosur.jpg",
+      "auteur": "Banksy",
+      "date": "2015",
+      "latitude": "",
+      "longitude": "",
+      "favori": true,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 4,
+      "name": "M-chat",
+      "photo": "../../assets/photos/M-chat.jpg",
+      "auteur": "Thomas Vuille",
+      "date": "2003",
+      "latitude": "",
+      "longitude": "",
+      "favori": false,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "favori": "true",
+      "name": "Clovis",
+      "auteur": "C215",
+      "photo": "https://i.pinimg.com/474x/06/21/dd/0621dde5f66a94108c90afeb24c95e9f.jpg",
+      "description": "c'est un truc a soissons",
+      "date": "2010",
+      "id": 5
+    }
+  ]
 }

@@ -24,9 +24,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/profil/profil.module').then( m => m.ProfilPageModule)
   },
   {
-    path: 'oeuvre/:id',
-    loadChildren: () => import('./components/oeuvre/oeuvre.module').then( m => m.OeuvrePageModule)
+    path: 'show/:id',
+    loadChildren: () => import('./pages/show/show.module').then( m => m.ShowPageModule)
   },
+
 ];
 
 @NgModule({

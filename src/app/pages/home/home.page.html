@@ -1,9 +1,48 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
+  <app-header></app-header>
 </ion-header>
 
 <ion-content>
+  <section>
+    <ion-toolbar>
+      <ion-searchbar placeholder="Rechercher une oeuvre"></ion-searchbar>
+    </ion-toolbar>
+    <ion-item lines="full">
+      <ion-button slot="start" size="small" fill="clear" href="/favori" class="button">
+        <ion-icon name="star-outline" slot="icon-only"></ion-icon>
+        Mes favoris
+      </ion-button>
+      <ion-button slot="end" size="small" fill="clear" href="/add" class="button">
+        <ion-icon name="create-outline" slot="icon-only"></ion-icon>
+        Poster une oeuvre
+      </ion-button>
+    </ion-item>
+  </section>
+  
+  <section *ngIf="!check; else loader">
+
+    <div *ngIf="oeuvres; else error">
+      <ion-item *ngFor="let oeuvre of oeuvres" [routerLink]="['/show', oeuvre.id]">   
+        <app-oeuvre
+          name="{{oeuvre.name}}"
+          photo="{{oeuvre.photo}}"
+          auteur="{{oeuvre.auteur}}"
+          date="{{oeuvre.date}}"
+          latitude="{{oeuvre.latitude}}" 
+          longitude="{{oeuvre.longitude}}">
+        </app-oeuvre>
+      </ion-item>
+    </div>
+
+    <ng-template #error>
+      <app-error></app-error>
+    </ng-template>
+
+  </section>
+
+  <ng-template #loader>
+    <app-loader></app-loader>
+  </ng-template>
 
 </ion-content>
+

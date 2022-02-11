@@ -1,9 +1,58 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>add</ion-title>
-  </ion-toolbar>
+ <app-header title="Proposer une nouvelle oeuvre"></app-header>
 </ion-header>
 
 <ion-content>
+  <form #oeuvreForm="ngForm" (ngSubmit)="save()">
+    <ion-item>
+        <ion-label position="floating">Nom</ion-label>
+        <ion-input [(ngModel)]="oeuvre.name" name="name" required
+                   minlength="3" maxlength="60" #name="ngModel"></ion-input>
+    </ion-item>
+    <app-error *ngIf="!name.valid && name.touched"
+               message="Vous devez saisir un nom entre 3 et 60 caractères"></app-error>
 
+    <ion-item>
+        <ion-label position="floating">URL de l'image</ion-label>
+        <ion-input [(ngModel)]="oeuvre.photo" name="picture" required
+                   pattern="https://.*" #picture="ngModel"></ion-input>
+    </ion-item>
+    <app-error *ngIf="!picture.valid && picture.touched"
+               message="Vous devez saisir une URL valide"></app-error>
+
+    <ion-item>
+        <ion-label position="floating">Description</ion-label>
+        <ion-textarea [(ngModel)]="oeuvre.description" name="description" required
+                      minlength="10" maxlength="500" #description="ngModel"></ion-textarea>
+    </ion-item>
+    <app-error *ngIf="!description.valid && description.touched"
+               message="Vous devez saisir une description entre 10 et 500 caractères"></app-error>
+
+    <ion-item>
+        <ion-label position="floating">Auteur</ion-label>
+        <ion-input [(ngModel)]="oeuvre.auteur" name="auteur" required
+                      minlength="3" maxlength="500" #auteur="ngModel"></ion-input>
+    </ion-item>
+    <app-error *ngIf="!auteur.valid && auteur.touched"
+               message="Vous devez saisir un nom d'auteur entre 3 et 500 caractères"></app-error>
+    
+    <ion-item>
+        <ion-label position="floating">Année de création</ion-label>
+        <ion-input [(ngModel)]="oeuvre.date" name="date" required
+                      minlength="4" maxlength="4" #date="ngModel"></ion-input>
+    </ion-item>
+    <app-error *ngIf="!date.valid && date.touched"
+               message="Vous devez saisir une année de création en 4 caractères"></app-error>
+
+    <ion-item>
+        <ion-label>favori</ion-label>
+        <ion-select [(ngModel)]="oeuvre.favori" value="true" required #description="ngModel">
+          <ion-select-option value="true">true</ion-select-option>
+          <ion-select-option value="false">false</ion-select-option>
+        </ion-select>lect>
+    </ion-item>
+
+
+    <ion-button type="submit" size="large" [disabled]="!oeuvreForm.form.valid">Ajouter</ion-button>
+  </form>
 </ion-content>

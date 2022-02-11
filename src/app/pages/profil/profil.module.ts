@@ -1,3 +1,4 @@
+import { SharedModule } from 'src/app/modules/shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { ProfilPage } from './profil.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ProfilPageRoutingModule
+    ProfilPageRoutingModule,
+    SharedModule,
   ],
   declarations: [ProfilPage]
 })

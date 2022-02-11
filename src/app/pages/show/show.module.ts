@@ -1,22 +1,22 @@
-import { SharedModule } from 'src/app/modules/shared-module/shared-module.module';
+import { SharedModule } from './../../modules/shared-module/shared-module.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FavoriPageRoutingModule } from './favori-routing.module';
+import { ShowPageRoutingModule } from './show-routing.module';
 
-import { FavoriPage } from './favori.page';
+import { ShowPage } from './show.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FavoriPageRoutingModule,
+    ShowPageRoutingModule,
     SharedModule
   ],
-  declarations: [FavoriPage]
+  declarations: [ShowPage]
 })
-export class FavoriPageModule {}
+export class ShowPageModule {}

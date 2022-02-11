@@ -1,3 +1,3 @@
 export const environment = {
-  production: true
+  production: 'https://spotart/oeuvres/'
 };
