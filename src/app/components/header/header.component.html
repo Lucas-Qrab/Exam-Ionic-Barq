@@ -1,0 +1,52 @@
+<script type="module">
+  import { menuController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+  window.menuController = menuController;
+</script>
+
+<ion-menu side="start" content-id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="home-outline"></ion-icon>
+        <a href="/"><ion-label>Home</ion-label></a>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="star-outline"></ion-icon>
+        <a href="/favori"><ion-label>favoris</ion-label></a>       
+      </ion-item>
+      <ion-item>
+        <ion-icon name="create-outline"></ion-icon>
+        <a href="/add"><ion-label>poster une oeuvre</ion-label></a>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <a href="/profil"><ion-label>profil</ion-label></a>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<div id="main-content">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <img [src]="icon" alt="Logo de SpotArt">
+      {{ title }}
+    </ion-title>
+  </ion-toolbar>
+  
+</div>
+
+<script>
+  async function openMenu() {
+    await menuController.open();
+  }
+</script>

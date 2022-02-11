@@ -1,0 +1,41 @@
+{
+    "oeuvres": [
+        {
+            "id": 1,
+            "name": "No ball games",
+            "photo": "../../assets/photos/NoBall.jpg",
+            "Auteur": "Banksy",
+            "Date":"2013",
+            "latitude":"",
+            "longitude":""
+        },
+        {
+            "id": 2,
+            "name": "Well Hung Lover",
+            "photo": "../../assets/photos/196px-Well_Hung_Lover.jpg",
+            "Auteur": "Banksy",
+            "Date":"2006",
+            "latitude":"",
+            "longitude":"" 
+        },
+        {
+            "id": 3,
+            "name": "Crayon for Closur",
+            "photo": "../../assets/photos/CrayonClosur.jpg",
+            "Auteur": "Banksy",
+            "Date":"2015",
+            "latitude":"",
+            "longitude":""
+        },
+        {
+            "id": 4,
+            "name": "M-chat",
+            "photo": "../../assets/photos/M-chat.jpg",
+            "Auteur": "Thomas Vuille",
+            "Date":"2003",
+            "latitude":"",
+            "longitude":""
+        }
+        
+    ]
+}
